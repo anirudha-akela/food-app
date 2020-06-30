@@ -139,7 +139,6 @@ We use progressive resizing by first overfitting on 128 x 128 images and progres
 
 learn.lr_find is an amazing function in the fastai library which tries a range of learning rates and is a massive help in choosing the proper the learning rate hyper parameter. 
 
-It is based upon Leslie Smith's idea of [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/abs/1506.01186).
 
 ```python
 learn.lr_find()
@@ -254,3 +253,4 @@ Jovian Notebook
 4. Food-101 dataset hosted by fastai:  [https://course.fast.ai/datasets](https://course.fast.ai/datasets)
 5. [New Food-101 SoTA with fastai and platform.ai’s fast augmentation search](https://platform.ai/blog/page/3/new-food-101-sota-with-fastai-and-platform-ais-fast-augmentation-search/)
 6. Papers with Code, [SoTA of Image Classification on Food-101](https://paperswithcode.com/sota/fine-grained-image-classification-on-food-101)
+7. [Cyclical Learning Rates for Training Neural Networks](https://arxiv.org/abs/1506.01186)
