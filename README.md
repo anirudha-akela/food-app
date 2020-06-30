@@ -2,6 +2,22 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Qwhsq4_uHJcKUvrYU6Ly7CfAvBTrEOnl?usp=sharing)
 
+## Table of Contents
+[Introduction](https://github.com/anirudha-akela/food-app/blob/master/README.md#introduction)
+
+[Project Description](https://github.com/anirudha-akela/food-app/blob/master/README.md#project-description)
+
+[Dataset](https://github.com/anirudha-akela/food-app/blob/master/README.md#dataset)
+
+[Data augmentation and dataloaders](https://github.com/anirudha-akela/food-app/blob/master/README.md#data-augmentation-and-dataloaders)
+
+[The model](https://github.com/anirudha-akela/food-app/blob/master/README.md#the-model)
+
+[Results](https://github.com/anirudha-akela/food-app/blob/master/README.md#results)
+
+[References](https://github.com/anirudha-akela/food-app/blob/master/README.md#references)
+
+
 ## Introduction
 
 Deep learning is part of a broader family of machine learning methods based on artificial neural networks with representation learning. Learning can be supervised, semi-supervised or unsupervised. 
