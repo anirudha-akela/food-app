@@ -108,11 +108,9 @@ src =  (ImageList.from_folder(path=path).
 data = src.transform(tfms,size=128).databunch(bs=16).normalize(imagenet_stats)
 ```
 
-Lets see some of the images:
+Lets look at one image from each class: 
 
-```python
-data.show_batch(rows=5, figsize=(25,25))
-```
+![one image from each class](https://miro.medium.com/max/2000/1*y1NL-R2kj9NvEwi3dSPmwg.png)
 
 ## The model
 
