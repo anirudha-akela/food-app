@@ -1,4 +1,7 @@
 # Food Classification with Deep Learning in fastai
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Qwhsq4_uHJcKUvrYU6Ly7CfAvBTrEOnl?usp=sharing)
+
 ## Introduction
 
 Deep learning is part of a broader family of machine learning methods based on artificial neural networks with representation learning. Learning can be supervised, semi-supervised or unsupervised. 
@@ -237,13 +240,13 @@ interp.most_confused(min_val=10)
 
 Predictably, we see a lot of confusion between foods of the same general classes (chocolate_mousse/chocolate_cake , steak/filet_mignon/prime_rib/pork_chop, tuna_tartare/beef_tartare). This problem nicely highlights the challenges in food classification as we face a lot of classes that are very similar visually and may differ on other factors such texture or presentation which are not captured easily by CNNs. 
 
-## Links to code:
+### Links to code:
 
 [GitHub](https://github.com/anirudha-akela/food-app)
 
 [Colab Notebook](https://colab.research.google.com/drive/1Qwhsq4_uHJcKUvrYU6Ly7CfAvBTrEOnl?usp=sharing)
 
-Jovian Notebook
+[Jovian Notebook](https://jovian.ml/anirudha-akela/food101-fastai)
 
 ## References
 
