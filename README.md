@@ -93,7 +93,7 @@ I have used fastai's inbuilt data augmentation tools here:
 
 ```python
 tfms = get_transforms(do_flip=False,        #randomly flip the image horizontally
-                      max_rotate=20.,       #randonly rotate images by upto 20 degrees
+                      max_rotate=20.,       #randomly rotate images by upto 20 degrees
                       max_zoom=1.25,        #random zoom
                       max_warp=0.1)         #random perspective warping 
 ```
@@ -205,7 +205,7 @@ def plot_cm(y_true, y_pred, figsize=(100,100)):
 plot_cm(y, pred_class)
 ```
 ![Confusion matric with percentages](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6be68d8e-6550-4ebd-b3d6-c2802e7db6ad/final_confusion_matrix.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200630T073225Z&X-Amz-Expires=86400&X-Amz-Signature=2128b5538997a7b99b7ffa6bc500304a07cd4a4d7f9512d7977dc9d6285cd834&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22final_confusion_matrix.png%22)
-Such a large number of classes mean that the confusion matrix is very sparse and thus it is very difficult to gather any useful information from it, 
+Such a large number of classes mean that the confusion matrix is very sparse and thus it is very difficult to gather any useful information from it. Thankfully, fastai has us covered once again. 
 
 ### Most confused classes
 
