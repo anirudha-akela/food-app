@@ -163,6 +163,9 @@ interp.plot_top_losses(25, figsize=(25,25))
 ```
 ![25 Top losses image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4b0c2ef3-1d5f-4471-bf0b-cad6a8c8515b/ssfefe.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200630T072621Z&X-Amz-Expires=86400&X-Amz-Signature=f9ab887e3eb4de7fc00affcf0139049d1064bc903a63cb4a917e30b8f9deeaee&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22ssfefe.png%22)
 
+![25 Top Losses image](https://github.com/anirudha-akela/food-app/blob/master/images/lrfind.png)
+
+
 As we can see, a lot of the errors are on food items that are quite similar and hard to distinguish between like chocolate cake and strawberry shortcake.
 
 ![mislabeled pizza detected correctly!!](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7201556b-752a-4e58-88cd-794dd9c812d8/pizza.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200630T072254Z&X-Amz-Expires=86400&X-Amz-Signature=a24847982a7c7b23e022734074d84c8e8208dca339b215689eb3df50caa22400&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22pizza.png%22)
