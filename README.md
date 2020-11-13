@@ -8,7 +8,7 @@ Deep learning is part of a broader family of machine learning methods based on a
 
 Convolutional Neural Networks (CNNs), a technique within the broader Deep Learning field, have been a revolutionary force in Computer Vision applications, especially in the past half-decade or so. One main use-case is that of image classification, e.g. determining whether a picture is that of a dog or cat.
 
-![CNN Image](https://missinglink.ai/wp-content/uploads/2019/07/A-Convolutional-Neural-Network.png)
+![CNN Image](https://github.com/anirudha-akela/food-app/blob/master/images/cnn.png)
 
 Convolutional networks were inspired by biological processes in that the connectivity pattern between neurons resembles the organization of the animal visual cortex. This enables CNNs to learn complex functions and they can easily be scaled to thousands of different classes, as seen in the well-known ImageNet dataset of 1000 classes, used as a benchmark for computer vision algorithm performance. 
 
