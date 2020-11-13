@@ -69,13 +69,13 @@ edamame		    omelette
 
 Some of the classes are just variants of the same kind of food, which makes it very hard to differentiate between even for a human. For example, the only difference between steak and filet mignon is where from the cattle's body is the meat sourced from. 
 
-![Steak and filet mignon look the same!](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/efdb7e4d-3b88-4c6d-958a-bb4deb405262/imgonline-com-ua-twotoone-hSfiSA9Bte1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200630T071951Z&X-Amz-Expires=86400&X-Amz-Signature=0d39156d1252a9f65dc5a25be4af6baacf16327562065a16c1c7025810d377dd&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22imgonline-com-ua-twotoone-hSfiSA9Bte1.jpg%22)
+![Steak and filet mignon look the same!](https://github.com/anirudha-akela/food-app/blob/master/images/steak-filet.png)
 
 Figure 1 : Steak (left) and Filet Mignon (right)
 
 Even in the same class, images can vary wildly. For example, all of the images in Figure 2 have been labelled as "bread pudding", yet even as a human, I think I’d struggle to classify them as such.
 
-![Figure 2: A sample of images from the Food-101 dataset, all labelled as “bread pudding”.](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bdf300f2-e7f7-45ae-ad69-9577c690dfd1/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200630T072021Z&X-Amz-Expires=86400&X-Amz-Signature=898c970fb9871a2b798d3800bb862d7cd8575085b669f28cdf06cb1cf5a464ea&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![Figure 2: A sample of images from the Food-101 dataset, all labelled as “bread pudding”.](https://github.com/anirudha-akela/food-app/blob/master/images/bread-pudding.png)
 
 Figure 2: A sample of images from the Food-101 dataset, all labelled as “bread pudding”.
 
@@ -110,7 +110,7 @@ data = src.transform(tfms,size=128).databunch(bs=16).normalize(imagenet_stats)
 
 Lets look at one image from each class: 
 
-![one image from each class](https://miro.medium.com/max/2000/1*y1NL-R2kj9NvEwi3dSPmwg.png)
+![one image from each class](https://github.com/anirudha-akela/food-app/blob/master/images/classes.png)
 
 ## The model
 
@@ -118,11 +118,11 @@ Lets look at one image from each class:
 
 A residual neural network (ResNet) is a modifications to CNN that builds on constructs known from pyramidal cells in the cerebral cortex. Residual neural networks do this by utilizing skip connections, or shortcuts to jump over some layers. Typical ResNet models are implemented with double- or triple- layer skips that contain nonlinearities (ReLU) and batch normalization in between. 
 
-![Residual Networks diagram](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/6b0644bc-d248-46f0-b8c6-ccb7857a1a76/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200630T072127Z&X-Amz-Expires=86400&X-Amz-Signature=7c61e771564be74f44b3d6dbcda9da5f295090cf8ff0866e4c38348e1940af7e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![Residual Networks diagram](https://github.com/anirudha-akela/food-app/blob/master/images/residual.png)
 
 I am using the ResNet-50 architecture with pretrained weights on the ImageNet dataset containing ~14 million images. 
 
-![ResNet-50 architecture](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/07306487-a7ed-4bf9-9e3b-9fdd2fc88961/model2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200630T072129Z&X-Amz-Expires=86400&X-Amz-Signature=3cd30c0310a05ad49aa952f2e15a100333c8770af816facd3d825fccd1d75ba7&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22model2.png%22)
+![ResNet-50 architecture](https://github.com/anirudha-akela/food-app/blob/master/images/rn50arh.png)
 
 The ResNet-50 architecture.
 
@@ -161,14 +161,12 @@ interp = ClassificationInterpretation.from_learner(learn)
 losses,idxs = interp.top_losses()
 interp.plot_top_losses(25, figsize=(25,25))
 ```
-![25 Top losses image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/4b0c2ef3-1d5f-4471-bf0b-cad6a8c8515b/ssfefe.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200630T072621Z&X-Amz-Expires=86400&X-Amz-Signature=f9ab887e3eb4de7fc00affcf0139049d1064bc903a63cb4a917e30b8f9deeaee&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22ssfefe.png%22)
-
-![25 Top Losses image](https://github.com/anirudha-akela/food-app/blob/master/images/lrfind.png)
+![25 Top Losses image](https://github.com/anirudha-akela/food-app/blob/master/images/toplos.png)
 
 
 As we can see, a lot of the errors are on food items that are quite similar and hard to distinguish between like chocolate cake and strawberry shortcake.
 
-![mislabeled pizza detected correctly!!](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/7201556b-752a-4e58-88cd-794dd9c812d8/pizza.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200630T072254Z&X-Amz-Expires=86400&X-Amz-Signature=a24847982a7c7b23e022734074d84c8e8208dca339b215689eb3df50caa22400&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22pizza.png%22)
+![mislabeled pizza detected correctly!!](https://github.com/anirudha-akela/food-app/blob/master/images/pizza.png)
 
 In one of the images, the ground truth is actually mislabeled, but still our model manages to predict the correct class!!
 
