@@ -20,8 +20,6 @@ On top of all of this, are user-friendly APIs such as fastai and Keras that abs
 
 As an introductory project for myself, I chose to use a pre-trained image classifier and retrain it on a dataset that I find interesting, the Food-101 dataset.
 
-![Food-101-sample-image](https://camo.githubusercontent.com/a169296b1c9b506d8cfd76c8099a62a915e6febc/68747470733a2f2f7777772e766973696f6e2e65652e6574687a2e63682f64617461736574735f65787472612f666f6f642d3130312f7374617469632f696d672f666f6f642d3130312e6a7067)
-
 In the future, I want to also make something to be able to predict the amount of food and give the nutritional values based on that, but for now, lets do the image classification part. 
 
 ## Dataset
@@ -146,7 +144,7 @@ learn.lr_find()
 learn.recorder.plot()
 ```
 
-![lr find diagram](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8f7e267e-8d0f-4376-920f-b04ccd8e765f/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200630%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200630T072224Z&X-Amz-Expires=86400&X-Amz-Signature=9c9b2094b138cabd377b42c739f4db7c7c3f4b20840f6e05ce14015a279bf13e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22)
+![lr find diagram](https://github.com/anirudha-akela/food-app/blob/master/images/lrfind.png)
 
 ## Results
 
